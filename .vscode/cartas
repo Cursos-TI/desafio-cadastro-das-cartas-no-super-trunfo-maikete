@@ -1,0 +1,56 @@
+#include <stdio>
+
+struct Carta {
+    char codigo[4];           // Código da cidade (ex: A01)
+    int populacao;            // População
+    float area;               // Área em km²
+    float pib;                // PIB em bilhões
+    int pontosTuristicos;     // Número de pontos turísticos
+};
+
+int main() {
+    Carta carta1, carta2;
+
+    // Cadastro da primeira carta
+    cout << "Cadastro da primeira carta:\n";
+    cout << "Código da cidade (ex: A01): ";
+    cin >> carta1.codigo;
+    cout << "População: ";
+    cin >> carta1.populacao;
+    cout << "Área (km²): ";
+    cin >> carta1.area;
+    cout << "PIB (em bilhões): ";
+    cin >> carta1.pib;
+    cout << "Número de pontos turísticos: ";
+    cin >> carta1.pontosTuristicos;
+
+    // Cadastro da segunda carta
+    cout << "\nCadastro da segunda carta:\n";
+    cout << "Código da cidade (ex: B02): ";
+    cin >> carta2.codigo;
+    cout << "População: ";
+    cin >> carta2.populacao;
+    cout << "Área (km²): ";
+    cin >> carta2.area;
+    cout << "PIB (em bilhões): ";
+    cin >> carta2.pib;
+    cout << "Número de pontos turísticos: ";
+    cin >> carta2.pontosTuristicos;
+
+    // Exibição dos dados
+    cout << "\n--- Dados da primeira carta ---\n";
+    cout << "Código: " << carta1.codigo << "\n";
+    cout << "População: " << carta1.populacao << "\n";
+    cout << "Área: " << carta1.area << " km²\n";
+    cout << "PIB: " << carta1.pib << " bilhões\n";
+    cout << "Pontos turísticos: " << carta1.pontosTuristicos << "\n";
+
+    cout << "\n--- Dados da segunda carta ---\n";
+    cout << "Código: " << carta2.codigo << "\n";
+    cout << "População: " << carta2.populacao << "\n";
+    cout << "Área: " << carta2.area << " km²\n";
+    cout << "PIB: " << carta2.pib << " bilhões\n";
+    cout << "Pontos turísticos: " << carta2.pontosTuristicos << "\n";
+
+    return 0;
+}
